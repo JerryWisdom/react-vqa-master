@@ -1,0 +1,13 @@
+.sider {
+    // display: inline-block;
+    // position: relative;
+    width: $side-whole-menu;
+    /* height: 100%; */
+    &-wrap {
+        width: $side-wrap-view;
+        &-content {
+            width: $side-wrap-content;
+        }
+    }
+}
+

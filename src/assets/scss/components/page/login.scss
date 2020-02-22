@@ -1,0 +1,40 @@
+.login {
+    text-align: center;
+    color: black;
+    // position: relative;
+    // top: 0;
+    // bottom: 0;
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    .error-msg {
+        @include error-msg();
+    }
+    &-auth {
+        // position: absolute;
+        // top: 0;
+        // bottom: 0;
+        // width: 100%;
+        // height: 500;
+        flex: 1;
+        background-color: $login-auth-background-color;
+    }
+    &-user {
+        width: $user-info-width;   
+    }
+    &-password {
+        width: $user-info-width;
+    }
+}
+.forget{
+    &:hover {
+        color: $login-hover-text-color;
+    }
+}
+.required {
+    color: #FF0000;
+}
+
+.login::before {
+    @include login-background();
+}

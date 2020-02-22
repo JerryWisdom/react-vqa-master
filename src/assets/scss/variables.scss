@@ -1,0 +1,105 @@
+//
+//  define Variables or style function
+//
+// @extend .another_className 继承其它选择器风格
+
+@mixin error-msg($msg-padding-top: 0px) {
+    color: $error-message-hint;
+    padding-left: 10px;
+    padding-top: $msg-padding-top;
+}
+
+@mixin login-background($background-pic: '', $img-opacity: 0.5) {
+    // background-image: url( $background-pic ); '../pic/bg.png'
+    background-color: $background-pic;
+    background-size: cover;
+    content: "";
+    /*-webkit-filter: opacity(50%);  
+    filter: opacity(50%); */
+    opacity: $img-opacity;
+    z-index: -1;
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+// color
+$error-message-hint:                #f50;
+$access-response-background:        lightgoldenrodyellow;
+$top-title-background:              RGB(61,68,76);
+$introduce-title-text-color:        RGB(0,165,241);
+$introduce-ul-list-background:      lightgoldenrodyellow;
+$introduce-card-background:         #ECECEC;
+$record-title-text-color:           MediumTurquoise;
+$wechat-mini-title-text-color:      #000000;
+$login-auth-background-color:       RGB(240,240,240);
+$footer-background-color:           RGB(42,47,53);
+$footer-info-text-color:            RGB(255,255,255);
+$top-title-link-ahover:             #ffff00;
+$top-title-text-color:              #ffffff;
+$login-hover-text-color:            rgb(36, 190, 36);
+
+// font
+$upload-title-size:                 1.6em;
+$top-clock-font-size:               1.3em;
+$top-title-font-size:               1.8em;
+$introduce-list-font-size:          1.3em;
+$access-response-ans-font-size:     1.1em;
+$access-image-title-font-size:      1.7em;
+$introduce-title-text-size:         1.6em;
+$login-foot-text-size:              1.2em;
+
+// height 
+$top-title-height:                  60px;
+
+// width
+$user-info-width:                   300px;   //20%;
+$vqa-introduce-view:                60%;
+$user-record-view:                  64.6%;
+
+$upload-ques-width:                 40%;
+$upload-image-file:                 30%;
+$vqa-upload-view:                   58.6%;
+
+$vqa-access-view:                   63.6%;
+$access-image-width:                50%;
+$access-response-width:             50%;
+
+$side-whole-menu:                   26.4%;
+$side-wrap-view:                    100%;
+$side-wrap-content:                 55%;
+
+$top-title-width:                   70.5%;
+$date-calendar-view:                64%;
+$mini-side-calendar:                20%;
+
+$record-search-input:               100%;
+$record-search-button:              47.5%;
+$record-reset-button:               47.5%;
+
+$record-echarts-view:               73%;
+
+// margin
+$access-empty-margin-left:          28%;
+
+$record-margin-right:               9%;
+$upload-margin-right:               15%;
+$introduce-margin-right:            13.6%;
+$access-margin-right:               10%;
+$top-title-margin-right:            1%;
+$date-calendar-margin-right:        9.6%;
+$echarts-margin-right:              0.6%;
+
+$upload-image-margin-top:           20px;
+$upload-ques-margin-top:            10px;
+$top-clock-margin-top:              10px;
+$access-view-margin-top:            40px;
+$access-response-margin-top:        120px;
+$wechat-app-margin-top:             80px;
+$user-echarts-margin-top:           90px;
+
+// padding
+$introduce-card-padding:            30px;
+

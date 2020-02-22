@@ -1,0 +1,52 @@
+.foot {
+    // flex: 1;
+    height: 180px;
+    // position: absolute;
+    // bottom: 0;
+    // width: 100%;
+    color: $footer-info-text-color;
+    background-color: $footer-background-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &-app {
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      &-left {
+        width: 60%;
+        text-align: right;
+      }
+      &-right {
+        text-align: left;
+        flex: 1;
+        p {
+          padding-left: 30px;
+        }
+        &-intro {
+          color: RGB(169,184,202);
+        }
+      }
+    }
+    &-developer {
+      text-align: left;
+      flex: 1;
+      border-left: 1px solid #646f7c;
+      p {
+        color: RGB(169,184,202);
+        padding-left: 40px;
+        a {
+          color: RGB(169,184,202);
+        }
+      }
+      &-link {
+        color: $top-title-text-color;
+        &:hover {
+          color: $record-title-text-color;
+        }
+      }
+    }
+}

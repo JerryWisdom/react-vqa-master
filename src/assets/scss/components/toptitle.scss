@@ -1,0 +1,40 @@
+.nav {
+    // position: relative;
+    height: $top-title-height;
+    background: $top-title-background;
+    &-title {
+        // display: inline-block;
+        /* float: left; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &-name {
+            text-align: center;
+            width: $top-title-width;
+            color: $top-title-text-color;
+            line-height: $top-title-height;  // 文字高度居中对齐
+            font-size: $top-title-font-size;
+        }
+        &-link {
+            // float: right;
+            flex: 1;
+            text-align: right;
+            color: $top-title-text-color;
+            line-height: $top-title-height;
+            margin-right: $top-title-margin-right;
+            font-size: $top-clock-font-size;
+            a {
+                color: $top-title-text-color;
+                &:hover {
+                    color: $record-title-text-color;
+                }
+            }
+        }
+    }
+}
+
+.modal {
+    text-align: center
+}
+
+

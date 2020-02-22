@@ -1,0 +1,38 @@
+.register {
+    text-align: center;
+    color: black;
+    // position: absolute;
+    // top: 0;
+    // bottom: 0;
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    &-auth {
+        // position: absolute;
+        // top: 0;
+        // bottom: 0;
+        // width: 100%;
+        flex: 1;
+        // height: 500;
+        background-color: $login-auth-background-color;
+    }
+    .error-msg {
+        @include error-msg();
+    }
+    &-user {
+        width: $user-info-width;
+    }
+    &-password {
+        width: $user-info-width;
+    }
+    &-checkpwd {
+        width: $user-info-width;
+    }
+}
+.required {
+    color: #FF0000;
+}
+
+.register::before {
+    @include login-background();
+}

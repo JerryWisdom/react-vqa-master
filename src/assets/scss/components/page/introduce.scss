@@ -1,0 +1,36 @@
+.whole {
+    display: flex;
+    flex-direction: column;
+}
+
+.sider-intro {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.intro {
+    /* display: inline-block; */
+    // float: right;
+    // position: relative;
+    flex: 1;
+    text-align: center;
+    // width: $vqa-introduce-view;
+    margin-right: $introduce-margin-right;
+    &-title {
+        font-weight: bold;
+        font-size: $introduce-title-text-size;
+        color: $introduce-title-text-color;
+    }
+    &-card {
+        background: $introduce-card-background;
+        padding: $introduce-card-padding;
+        &-list {
+            font-size: $introduce-list-font-size;
+            /* text-align: center; */
+            background: $introduce-ul-list-background;
+        }
+    }
+}
+

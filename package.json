@@ -1,0 +1,69 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^3.26.7",
+    "antd-mobile": "^2.3.1",
+    "axios": "^0.19.2",
+    "babel-cli": "^6.26.0",
+    "blob": "^0.0.5",
+    "cssnano": "^4.1.10",
+    "echarts": "^4.6.0",
+    "express": "^4.17.1",
+    "history": "^4.10.1",
+    "moment": "^2.24.0",
+    "node-sass": "^4.13.1",
+    "postcss-aspect-ratio-mini": "^1.0.1",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-px-to-viewport": "^1.1.1",
+    "postcss-viewport-units": "^0.1.6",
+    "postcss-write-svg": "^3.0.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-highlight-words": "^0.16.0",
+    "react-materialize": "^3.5.9",
+    "react-redux": "^7.1.3",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "3.3.0",
+    "react-tooltip": "^3.11.5",
+    "reactjs-swiper": "^0.1.0",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
+    "redux-saga": "^1.1.3",
+    "redux-thunk": "^2.3.0",
+    "sass": "^1.25.0",
+    "sass-loader": "^8.0.2",
+    "whatwg-fetch": "^3.0.0",
+    "yarn": "^1.22.0",
+    "zrender": "^4.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prebuild": "rm -rf ../VizWiz-VQA-PyTorch-master/templates/index.html && rm -rf ../VizWiz-VQA-PyTorch-master/static/build",
+    "postbuild": "cp build/index.html ../VizWiz-VQA-PyTorch-master/templates/ &&  cp -r build ../VizWiz-VQA-PyTorch-master/static/"
+  },
+  "homepage": "/",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

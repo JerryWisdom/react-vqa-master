@@ -1,0 +1,40 @@
+.whole {
+    display: flex;
+    flex-direction: column;
+}
+
+.sider-reco {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.reco {
+    /* display: inline-block; */
+    // float: right;
+    // position: relative;
+    flex: 1;
+    text-align: center;
+    margin-right: $record-margin-right;
+    // width: $user-record-view;
+    color: green;
+    h1 {
+        color: $record-title-text-color;
+    }
+    .error-msg {
+        @include error-msg(10px);
+    }
+}
+
+.search_input {
+    width: 100%;
+}
+
+.search_button {
+    width: 47.5%;
+}
+
+.reset_button {
+    width: 47.5%;
+}
