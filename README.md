@@ -52,4 +52,4 @@ nginx -s reload
 docker start/restart frps_container_name
 ```
 ## Login Page
-![login page](https://github.com/JerryWisdom/react-redux-vqa-master/src/assets/pic/vqa.png)
+![login page](https://github.com/JerryWisdom/react-vqa-master/blob/master/src/assets/pic/login.png)
