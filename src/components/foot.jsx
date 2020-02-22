@@ -4,6 +4,7 @@ import {
     FOOTER,
     GITHUB,
     ICP,
+    APP_GITHUB,
     ICP_address,
     VQA
 } from "../constant/constants";
@@ -55,6 +56,18 @@ class LOGINFOOT extends Component{
                                 // style={{color: "#ffffff"}}
                             />
                         </a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a
+                            href={APP_GITHUB}
+                            target="view_window"
+                            className="foot-developer-link"
+                        >
+                            Android APP
+                        </a>&nbsp;&nbsp;
+                        <Icon
+                            type="android"
+                            // style={{color: "#ffffff"}}
+                        />
                     </p>
                     <p>
                         <a

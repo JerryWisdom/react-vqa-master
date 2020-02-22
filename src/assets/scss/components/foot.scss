@@ -40,12 +40,15 @@
         padding-left: 40px;
         a {
           color: RGB(169,184,202);
+          &:hover {
+            color: #ffffff;
+          }
         }
       }
       &-link {
-        color: $top-title-text-color;
+        color: RGB(169,184,202);
         &:hover {
-          color: $record-title-text-color;
+          color: #ffffff;
         }
       }
     }
