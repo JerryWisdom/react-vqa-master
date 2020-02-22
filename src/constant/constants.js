@@ -6,7 +6,7 @@ export const CLEAR_INPUT_QUES = 'CLEAR_INPUT_QUES'
 
 //登录页页脚和图标链接
 export const AUTHOR = '1085031736@qq.com'
-export const GITHUB = 'https://github.com/JerryWisdom/react-redux-vqa-master'
+export const GITHUB = 'https://github.com/JerryWisdom/react-vqa-master'
 export const VQA = 'https://visualqa.org/'
 export const ICP = '赣ICP备20001362号-1'
 export const FOOTER = 'Copyright © 2020. ALL RIGHT RESERVED.'
