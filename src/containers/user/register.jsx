@@ -63,32 +63,40 @@ class Register extends Component{
                     <h2> 
                         { LOGIN_TITLE }
                     </h2>
-                    <List>
-                        { msg ? <p className="error-msg">{ msg }</p> : null }
-                        <p><Input 
-                            prefix={<Icon type="user" />} 
-                            className='register-user' 
-                            placeholder="请输入用户名" 
-                            allowClear 
-                            onChange={v=>this.handleChange1(v.target.value)} 
-                        /> <span className="required">*</span></p>
+                    { msg ? <p className="error-msg">{ msg }</p> : null }
+                    <p className='register-auth-form'>
+                        <label for="username" className='register-auth-preInput'><span className="required">*</span> 用户名</label>
+                        <Input
+                        prefix={<Icon type="user" />}
+                        id='username'
+                        className='register-user'
+                        placeholder="请输入用户名"
+                        allowClear
+                        onChange={v=>this.handleChange1(v.target.value)}
+                    /></p>
 
-                        <p><Input.Password 
-                            prefix={<Icon type="lock" />} 
-                            className='register-password' 
-                            placeholder="请输入密码" 
-                            allowClear 
-                            onChange={v=>this.handleChange2(v.target.value)}  
-                        /> <span className="required">*</span></p>
-                        
-                        <p><Input.Password 
-                            prefix={<Icon type="lock" />} 
-                            className='register-checkpwd' 
-                            placeholder="请确认密码" 
-                            allowClear 
-                            onChange={v=>this.handleChange3(v.target.value)}  
-                        /> <span className="required">*</span></p>
-                    </List>
+                    <p className='register-auth-form'>
+                        <label for="password" className='register-auth-preInput'><span className="required">*</span> 密码</label>
+                        <Input.Password
+                        prefix={<Icon type="lock" />}
+                        id='password'
+                        className='register-password'
+                        placeholder="请输入密码"
+                        allowClear
+                        onChange={v=>this.handleChange2(v.target.value)}
+                    /></p>
+
+                    <p className='register-auth-form'>
+                        <label for="password" className='register-auth-preInput'><span className="required">*</span> 重复密码</label>
+                        <Input.Password
+                        prefix={<Icon type="lock" />}
+                        id='password'
+                        className='register-checkpwd'
+                        placeholder="请确认密码"
+                        allowClear
+                        onChange={v=>this.handleChange3(v.target.value)}
+                    /></p>
+
                     {/* <br /> */}
                     <Button 
                         type="primary" 
@@ -103,7 +111,7 @@ class Register extends Component{
                     >
                         返回登录
                     </Button>
-                    <br /><br /><br /><br />
+                    <br /><br /><br /><br /><br />
                 </div>
                 <LOGINFOOT/>
             </div>

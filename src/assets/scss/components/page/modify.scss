@@ -15,18 +15,28 @@
         flex: 1;
         // width: 100%;
         background-color: $login-auth-background-color;
+        &-form {
+            margin-right: $user-info-label-width;
+        }
+        &-preInput {
+            text-align: right;
+            padding-right: 10px;
+            width: $user-info-label-width;
+            display: inline-block;
+            vertical-align: top;
+        }
     }
     .error-msg {
         @include error-msg();
     }
     &-user {
-        width: $user-info-width;
+        width: $user-info-input-width;
     }
     &-password {
-        width: $user-info-width;
+        width: $user-info-input-width;
     }
     &-checkpwd {
-        width: $user-info-width;
+        width: $user-info-input-width;
     }
 }
 .required {

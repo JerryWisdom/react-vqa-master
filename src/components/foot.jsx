@@ -9,11 +9,26 @@ import {
     VQA
 } from "../constant/constants";
 import appScan from '../assets/pic/app_scan.jpg'
+import sodagreen from "../assets/sodagreen.mp3" //assets文件先import
 import {
     Icon,
 } from 'antd'
 
 class LOGINFOOT extends Component{
+    componentDidMount() {
+        var audio = document.getElementById('music');
+        audio.pause();//打开页面时无音乐
+    }
+    play_audio = () => {
+        var audio = document.getElementById('music');
+        if (audio.paused) {
+            audio.play();
+        }else{
+            audio.pause();
+            audio.currentTime = 0;//音乐从头播放
+        }
+    }
+
     render(){
         return (
             <div className='foot'>
@@ -67,7 +82,22 @@ class LOGINFOOT extends Component{
                         <Icon
                             type="android"
                             // style={{color: "#ffffff"}}
-                        />
+                        />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <audio
+                            id='music'
+                            src={sodagreen}
+                            autoplay="autoplay" loop="loop" controls hidden
+                        >
+                        </audio>
+                        <a
+                            onClick={this.play_audio.bind(this)}
+                        >
+                            Play music&nbsp;
+                            <Icon
+                                type="play-circle"
+                                // style={{color: "#ffffff"}}  onClick="a();"
+                            />
+                        </a>
                     </p>
                     <p>
                         <a
@@ -85,3 +115,4 @@ class LOGINFOOT extends Component{
 }
 
 export default LOGINFOOT
+
