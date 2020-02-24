@@ -25,7 +25,7 @@ class LOGINFOOT extends Component{
             audio.play();
         }else{
             audio.pause();
-            audio.currentTime = 0;//音乐从头播放
+            // audio.currentTime = 0; //音乐从头播放
         }
     }
 
