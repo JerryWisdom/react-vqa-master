@@ -86,7 +86,9 @@ class LOGINFOOT extends Component{
                         <audio
                             id='music'
                             src={sodagreen}
-                            autoplay="autoplay" loop="loop" controls hidden
+                            autoplay="autoplay" loop="loop"
+                            controls
+                            hidden
                         >
                         </audio>
                         <a

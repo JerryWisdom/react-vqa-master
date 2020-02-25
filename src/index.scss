@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    min-width: 1300px;  //这样缩小或打开调试页面不影响界面显示
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
